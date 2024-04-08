@@ -15,21 +15,28 @@ html, body {
     min-height: 100% ;
     background-color: darkgray;
     font-family: var(--fonte1);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 header {
+    /*background-color: tomato;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background-color: transparent;*/
     background-color: black;
     color: white;
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
-    margin: 20px;
+    
 }
 
 a {
     color: white;
     text-decoration: none;
     font-weight: bolder;
+    padding: 10px;
 }
 
 a:hover {
