@@ -11,12 +11,10 @@
     font-size: 1em;
 }
 
-html, body {
-    min-height: 100% ;
-    background-color: darkgray;
-    font-family: var(--fonte1);
-    background-repeat: no-repeat;
-    background-size: 100%;
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 header {
@@ -25,7 +23,6 @@ header {
     -webkit-backdrop-filter: blur(5px);
     background-color: transparent;*/
     background-color: black;
-    color: white;
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -34,12 +31,47 @@ header {
 
 a {
     color: white;
-    text-decoration: none;
-    font-weight: bolder;
     padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration:.5s;
 }
 
-a:hover {
+nav > a:hover {
     background-color: gray;
-    border-radius: 05px;
+    color: white;
 }
+
+main {
+    background-color: black;
+    min-width: 300px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.349);
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+section {
+    background-color: white;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.5vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    width: 300px;
+}
+
+
