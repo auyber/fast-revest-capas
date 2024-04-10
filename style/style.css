@@ -2,6 +2,9 @@
 
 :root {
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --cor1: #363030;
+    --cor2: #7A4A12;
+    --cor3:#5e5959;
     
 }
 
@@ -27,6 +30,12 @@ header {
     padding-top: 30px;
     padding-bottom: 30px;
     
+    
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
 }
 
 a {
@@ -38,21 +47,64 @@ a {
     transition-duration:.5s;
 }
 
+a:hover{
+    background-color: var(--cor2);
+}
+
+ul {
+    list-style: none;
+}
+
+nav {
+    max-width: 1120px;
+    margin: auto;
+    padding: 1.5rem 10rem;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
 nav > a:hover {
     background-color: gray;
     color: white;
 }
 
+
+span > h1 {
+    color: var(--cor2);
+    text-align: center;
+}
+
+h1 {
+    text-align: left;
+    color: var(--cor2);
+}
+
+h1.principal {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
 main {
-    background-color: black;
+    background-color:black;
     min-width: 300px;
     max-width: 1200px;
     margin: auto;
     padding: 0px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.349);
     margin-bottom: 30px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    
 }
 
 section {
@@ -61,8 +113,12 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    padding-right: 30px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 3.5vh;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin: 20px;
 }
 
 .container {
@@ -72,6 +128,7 @@ section {
 
 img {
     width: 300px;
+    height: 300px;
 }
 
 
