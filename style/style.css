@@ -1,10 +1,20 @@
 @charset "UTF-08";
 
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+@font-face {
+    font-family: 'Luna';
+    src: url(../fontes/Luna.ttf);
+}
+
 :root {
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Lobster', Geneva, sans-serif;
+    --fonte3: 'Luna', Geneva, sans-serif;
     --cor1: #363030;
     --cor2: #7A4A12;
-    --cor3:#5e5959;
+    --cor: #5e5959;
+    --cor4: #B57625;
     
 }
 
@@ -73,7 +83,9 @@ nav > a:hover {
 
 
 span > h1 {
-    color: var(--cor2);
+    font-family: "Luna", sans-serif;
+    font-size: 1em;
+    color: var(--cor4);
     text-align: center;
 }
 
@@ -109,8 +121,8 @@ main {
 
 section {
     background-color: white;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding-top: 05vh;
+    padding-bottom: 05vh;
     line-height: 2em;
     padding-left: 30px;
     padding-right: 30px;
