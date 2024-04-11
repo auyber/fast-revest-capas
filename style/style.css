@@ -193,3 +193,10 @@ img.main {
     align-items: center;
 }
 
+h2.quemsomos {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    text-align: justify;
+    margin: 30px;
+}
