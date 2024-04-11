@@ -7,10 +7,16 @@
     src: url(../fontes/Luna.ttf);
 }
 
+@font-face {
+    font-family: 'IBM Plex Mono';
+    src: url(../fontes/IBM_Plex_Mono/IBMPlexMono-Regular.ttf);
+}
+
 :root {
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --fonte2: 'Lobster', Geneva, sans-serif;
     --fonte3: 'Luna', Geneva, sans-serif;
+    --fonte4: 'IBM Plex Mono', Geneva, sans-serif;
     --cor1: #363030;
     --cor2: #7A4A12;
     --cor: #5e5959;
@@ -26,7 +32,7 @@
 
 body {
     background-color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "IBM Plex Mono", monospace;
 
 }
 
@@ -90,8 +96,11 @@ span > h1 {
 }
 
 h1 {
-    text-align: left;
+    text-align: center;
     color: var(--cor2);
+    font-size: 2rem;
+    line-height: 2em;
+    
 }
 
 h1.principal {
@@ -100,6 +109,8 @@ h1.principal {
 
 p {
     text-align: justify;
+    font-size: 1rem;
+    
 }
 
 .menu {
@@ -117,6 +128,7 @@ main {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.349);
     margin-bottom: 30px;
     
+    
 }
 
 section {
@@ -126,11 +138,12 @@ section {
     line-height: 2em;
     padding-left: 30px;
     padding-right: 30px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte4);
     font-size: 3.5vh;
+    font-weight: 600;
     border-bottom-left-radius: 30px;
     border-top-right-radius: 30px;
-    margin: 20px;
+    margin: 10px;
 }
 
 .container {
@@ -143,4 +156,7 @@ img {
     height: 300px;
 }
 
+.eco {
+    color: green;
+}
 
