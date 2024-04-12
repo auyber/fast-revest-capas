@@ -1,23 +1,60 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fast Revest Capas</title>
-    <link rel="stylesheet" href="/style/style.css">
-    
+    <title>Fast Revest</title>
+    <link rel="stylesheet" href="../style/style2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
     <header>
-        <h1>GALERIA</h1>
+        <nav>
+            <span>
+                <h1 class="span">Fast Revest</h1>
+                <img class="logo" src="../imagens/logo.png" alt="logo fast revest">
+            </span>
+            <ul class="menu">
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../paginas extras/sobrenos.html">Sobre Nós</a></li>
+                <li><a href="../paginas extras/galeria.html">Galeria</a></li>
+                <li><a href="#">Curiosidades</a></li>
+                <li><a href="../paginas extras/contatos.html">Contato</a></li>
+            </ul>
+        </nav>
+        <hr color="7A4A12"> 
+        <br>
+        <h1 style="color: #7A4A12;">Galeria</h1>
     </header>
-   
+
     <main>
-       
+        
+        <div class="container">
+            <div class="slider-wrapper">
+                <button id="prev-slide" class="slide-button material-symbols-rounded">
+                chevron_left
+                </button>
+                <ul class="image-list">
+                    <img class="image-item" src="../imagens/1.jpeg" alt="img-1" />
+                    <img class="image-item" src="../imagens/2.jpeg" alt="img-2" />
+                    <img class="image-item" src="../imagens/imagem01.jpeg" alt="img-3" />
+                    <img class="image-item" src="../imagens/4.jpeg" alt="img-4" />
+                    <img class="image-item" src= "../imagens/6.jpeg" alt="img-6" />
+                    <img class="image-item" src="../imagens/7.jpeg" alt="img-7" />
+                    <img class="image-item" src="../imagens/8.jpeg" alt="img-8" />
+                </ul>
+                <button id="next-slide" class="slide-button material-symbols-rounded">
+                chevron_right
+                </button>
+            </div>
+            <div class="slider-scrollbar">
+                <div class="scrollbar-track">
+                <div class="scrollbar-thumb"></div>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer>
-        <a class="voltar" href="../index.html">voltar</a>
-    </footer>
-    
+
+    <script src="../style/script.js"></script>
 </body>
 </html>

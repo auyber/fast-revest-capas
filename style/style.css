@@ -28,7 +28,7 @@
     margin: 0;
     padding: 0;
     font-size: 1em;
-}
+   }
 
 body {
     background-color: black;
@@ -189,14 +189,23 @@ img.main {
 }
 
 .voltar {
-    color: var(--cor4);
-    align-items: center;
+    color: white;
+    margin: 30px;
+    
 }
 
-h2.quemsomos {
-    color: white;
+p.quemsomos {
+    font-family: var(--fonte4);
+    color: black;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1em;
     text-align: justify;
     margin: 30px;
 }
+
+section.paginas {
+    margin: 30px;
+    min-width: 300px;
+    max-width: 1200px;
+}
+

@@ -1,0 +1,230 @@
+@charset "UTF-08";
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+@font-face {
+    font-family: 'Luna';
+    src: url(../fontes/Luna.ttf);
+}
+
+@font-face {
+    font-family: 'IBM Plex Mono';
+    src: url(../fontes/IBM_Plex_Mono/IBMPlexMono-Regular.ttf);
+}
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Lobster', Geneva, sans-serif;
+    --fonte3: 'Luna', Geneva, sans-serif;
+    --fonte4: 'IBM Plex Mono', Geneva, sans-serif;
+    --cor1: #363030;
+    --cor2: #7A4A12;
+    --cor: #5e5959;
+    --cor4: #B57625;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: black;
+    margin-top: 30px;
+    font-family: "IBM Plex Mono", monospace;
+  }
+  .container {
+    max-width: 1200px;
+    width: 95%;
+  }
+  .slider-wrapper {
+    position: relative;
+  }
+  .slider-wrapper .slide-button {
+    position: absolute;
+    top: 50%;
+    outline: none;
+    border: none;
+    height: 50px;
+    width: 50px;
+    z-index: 5;
+    color: black;
+    display: flex;
+    cursor: pointer;
+    font-size: 2.2rem;
+    background: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+  .slider-wrapper .slide-button:hover {
+    background: #404040;
+  }
+  .slider-wrapper .slide-button#prev-slide {
+    left: -25px;
+    display: none;
+  }
+  .slider-wrapper .slide-button#next-slide {
+    right: -25px;
+  }
+  .slider-wrapper .image-list {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 18px;
+    font-size: 0;
+    list-style: none;
+    margin-bottom: 30px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .slider-wrapper .image-list::-webkit-scrollbar {
+    display: none;
+  }
+  .slider-wrapper .image-list .image-item {
+    width: 325px;
+    height: 400px;
+    object-fit: cover;
+  }
+  .container .slider-scrollbar {
+    height: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .slider-scrollbar .scrollbar-track {
+    background: black;
+    width: 100%;
+    height: 2px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    position: relative;
+  }
+  .slider-scrollbar:hover .scrollbar-track {
+    height: 4px;
+  }
+  .slider-scrollbar .scrollbar-thumb {
+    position: absolute;
+    background: white;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    height: 100%;
+    cursor: grab;
+    border-radius: inherit;
+  }
+  .slider-scrollbar .scrollbar-thumb:active {
+    cursor: grabbing;
+    height: 8px;
+    top: -2px;
+  }
+  .slider-scrollbar .scrollbar-thumb::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    bottom: -10px;
+  }
+  /* Styles for mobile and tablets */
+  @media only screen and (max-width: 1023px) {
+    .slider-wrapper .slide-button {
+      display: none !important;
+    }
+    .slider-wrapper .image-list {
+      gap: 10px;
+      margin-bottom: 15px;
+      scroll-snap-type: x mandatory;
+    }
+    .slider-wrapper .image-list .image-item {
+      width: 280px;
+      height: 380px;
+    }
+    .slider-scrollbar .scrollbar-thumb {
+      width: 20%;
+    }
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Certifique-se de que o z-index seja maior que o conteúdo principal */
+    background-color: black; /* Adicione a cor de fundo desejada */
+    text-align: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+}
+
+a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration:.5s;
+}
+
+a:hover{
+    background-color: var(--cor2);
+}
+
+nav {
+    max-width: 1120px;
+    margin: auto;
+    padding: 1.5rem 02.8rem;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+nav > a:hover {
+    background-color: gray;
+    color: white;
+}
+
+
+h1.span {
+    font-family: "Luna", sans-serif;
+    font-size: 1em;
+    color: var(--cor4);
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+
+
+main {
+    margin-top: 30px;
+    padding-top: 250px; /* Ajuste o valor conforme necessário para compensar a altura do cabeçalho */
+}
+
+img.main {
+    max-width: 200px, ;
+    max-width: 200px;
+    min-width: 200px;
+    min-height: 200px;
+    margin-left: 50px;
+    border: 1px solid black;
+    border-radius: 50px;
+}
