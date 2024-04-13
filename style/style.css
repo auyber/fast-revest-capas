@@ -210,7 +210,64 @@ section.paginas {
     max-width: 1200px;
 }
 
-
+@media only screen and (max-width: 768px) {
+    nav {
+      padding: 1rem;
+    }
+  
+    .logo {
+      width: 80px;
+      height: 80px;
+    }
+  
+    ul.menu {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    a {
+      padding: 5px;
+    }
+  
+    main {
+      padding: 1rem;
+    }
+  
+    section {
+      font-size: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    img.main {
+      margin-top: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    h1.principal {
+      margin: 10px;
+      font-size: 1.5rem;
+    }
+  
+    p {
+      margin: 10px;
+    }
+  
+    section {
+      font-size: 14px;
+    }
+  
+    img.main {
+      margin-left: 0;
+    }
+  }
 
 
 
