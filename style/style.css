@@ -166,6 +166,10 @@ section {
     border: solid 2px var(--cor4);
 }
 
+section.duvidas {
+    padding: 1vh;
+}
+
 section.destaque {
     border-radius: 30px;
 }
@@ -213,11 +217,15 @@ section.paginas {
 @media only screen and (max-width: 768px) {
     nav {
       padding: 1rem;
+      flex-direction: column;
+      align-items: center;
     }
   
     .logo {
       width: 80px;
       height: 80px;
+      order: -1; /* Move o logo para cima */
+      margin-bottom: 10px; /* Adiciona um espaço entre o logo e a lista de itens do menu */
     }
   
     ul.menu {
@@ -269,5 +277,16 @@ section.paginas {
     }
   }
 
+  #link-css {
+    text-align: none;
+    color: white;
+    background-color: var(--cor2);
+    padding: 15px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    border: solid 1px var(--cor);
+    border-radius: 10px;
+  }
 
-
+  

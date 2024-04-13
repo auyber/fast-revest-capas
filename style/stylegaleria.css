@@ -1,3 +1,4 @@
+
 @charset "UTF-08";
 
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
@@ -28,23 +29,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  body {
+}
+
+body {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column; /* Alterado para uma disposição de coluna */
     min-height: 100vh;
     background: black;
-    margin-top: 30px;
     font-family: "IBM Plex Mono", monospace;
-  }
-  .container {
+}
+
+.container {
     max-width: 1200px;
     width: 95%;
-  }
-  .slider-wrapper {
+    margin: auto; /* Centraliza o conteúdo */
+}
+
+.slider-wrapper {
     position: relative;
-  }
+}
+
   .slider-wrapper .slide-button {
     position: absolute;
     top: 50%;
@@ -152,12 +156,9 @@
   }
 
   header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000; /* Certifique-se de que o z-index seja maior que o conteúdo principal */
-    background-color: black; /* Adicione a cor de fundo desejada */
+    position: relative; /* Alterado para relativo */
+    z-index: 1000;
+    background-color: black;
     text-align: center;
     padding-top: 13px;
     padding-bottom: 13px;
@@ -215,8 +216,7 @@ h1.span {
 
 
 main {
-    margin-top: 30px;
-    padding-top: 250px; /* Ajuste o valor conforme necessário para compensar a altura do cabeçalho */
+  margin-top: 30px;
 }
 
 img.main {
@@ -227,4 +227,138 @@ img.main {
     margin-left: 50px;
     border: 1px solid black;
     border-radius: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    padding: 1rem;
+  }
+
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  ul.menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  a {
+    padding: 5px;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  section {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }}
+
+  @media only screen and (max-width: 768px) {
+    /* Adicione estilos de layout responsivo para telas menores */
+    header {
+        padding: 1rem; /* Ajuste conforme necessário */
+    }
+
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    ul.menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    a {
+        padding: 5px;
+    }
+
+    main {
+        padding: 1rem;
+        margin-top: 100px; /* Ajuste conforme necessário */
+    }
+
+    section {
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+  .slider-wrapper .slide-button {
+      display: flex !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    width: 80px;
+    height: 80px;
+    order: -1; /* Move o logo para cima */
+    margin-bottom: 10px; /* Adiciona um espaço entre o logo e a lista de itens do menu */
+  }
+
+  ul.menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  a {
+    padding: 5px;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  section {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  img.main {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h1.principal {
+    margin: 10px;
+    font-size: 1.5rem;
+  }
+
+  p {
+    margin: 10px;
+  }
+
+  section {
+    font-size: 14px;
+  }
+
+  img.main {
+    margin-left: 0;
+  }
 }
