@@ -60,15 +60,15 @@ html, body {
 	color: #fff;
 }
 
-.wrapper .button:nth-child(1):hover .icon {
+.wrapper a:nth-child(1):hover .icon {
 	background: #05a354;
 }
 
-.wrapper .button:nth-child(2):hover .icon {
+.wrapper > a:nth-child(2):hover .icon {
 	background-image: linear-gradient(45deg, #5652C4, #ff0000);
 }
 
-.wrapper .button:nth-child(3):hover .icon {
+.wrapper > a:nth-child(3):hover .icon {
 	background: #4267b2;
 }
 
@@ -96,15 +96,15 @@ html, body {
 	width: 200px;
 }
 
-.wrapper .button:nth-child(1):hover span {
+.wrapper a:nth-child(1):hover span {
 	color: #05a354;
 }
 
-.wrapper .button:nth-child(2):hover span {
+.wrapper a:nth-child(2):hover span {
 	color: #ff0000;
 }
 
-.wrapper .button:nth-child(3):hover span {
+.wrapper a:nth-child(3):hover span {
 	color: #4267b2;
 }
 
@@ -202,4 +202,27 @@ h1 {
     align-items: center; /* Centraliza os elementos verticalmente */
 }
 
+section {
+    background-color: white;
+    padding-top: 05vh;
+    line-height: 2em;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: var(--fonte4);
+    font-size: 3.5vh;
+    font-weight: 600;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin: 10px;
+    border: solid 2px var(--cor4);
+    text-align: center;
+}
+
+section.destaque {
+    border-radius: 30px;
+}
+
+div {
+    padding: 0;
+}
 
