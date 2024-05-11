@@ -35,8 +35,8 @@ body {
     display: flex;
     flex-direction: column; /* Alterado para uma disposição de coluna */
     min-height: 100vh;
-    background: black;
-    font-family: "IBM Plex Mono", monospace;
+    background: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container {
@@ -57,11 +57,11 @@ body {
     height: 50px;
     width: 50px;
     z-index: 5;
-    color: black;
+    color: white;
     display: flex;
     cursor: pointer;
     font-size: 2.2rem;
-    background: white;
+    background: black;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
@@ -102,7 +102,7 @@ body {
     align-items: center;
   }
   .slider-scrollbar .scrollbar-track {
-    background: black;
+    background: white;
     width: 100%;
     height: 2px;
     display: flex;
@@ -115,7 +115,7 @@ body {
   }
   .slider-scrollbar .scrollbar-thumb {
     position: absolute;
-    background: white;
+    background: black;
     top: 0;
     bottom: 0;
     width: 50%;
@@ -156,17 +156,14 @@ body {
   }
 
   header {
-    position: relative; /* Alterado para relativo */
-    z-index: 1000;
     background-color: black;
     text-align: center;
-    padding-top: 13px;
-    padding-bottom: 13px;
+    
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     margin: 0;
 }
 
@@ -184,14 +181,12 @@ a:hover{
 }
 
 nav {
-    max-width: 1120px;
-    margin: auto;
-    padding: 1.5rem 02.8rem;
-    
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    align-items: center;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
 }
 
 nav > a:hover {
@@ -207,16 +202,26 @@ h1.span {
     text-align: center;
 }
 
+h1 {
+  text-align: center;
+  color: var(--cor4);
+  font-size: 2rem;
+  line-height: 2em;
+  
+}
+
+main {
+  margin-top: 50px;
+}
+
 .menu {
     display: flex;
     flex-direction: row;
     gap: 1.5rem;
 }
 
-
-
-main {
-  margin-top: 30px;
+section {
+  background-color: white;
 }
 
 img.main {
@@ -225,140 +230,8 @@ img.main {
     min-width: 200px;
     min-height: 200px;
     margin-left: 50px;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 50px;
+  
 }
 
-@media only screen and (max-width: 768px) {
-  nav {
-    padding: 1rem;
-  }
-
-  .logo {
-    width: 80px;
-    height: 80px;
-  }
-
-  ul.menu {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  a {
-    padding: 5px;
-  }
-
-  main {
-    padding: 1rem;
-  }
-
-  section {
-    font-size: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }}
-
-  @media only screen and (max-width: 768px) {
-    /* Adicione estilos de layout responsivo para telas menores */
-    header {
-        padding: 1rem; /* Ajuste conforme necessário */
-    }
-
-    .logo {
-        width: 80px;
-        height: 80px;
-    }
-
-    ul.menu {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    a {
-        padding: 5px;
-    }
-
-    main {
-        padding: 1rem;
-        margin-top: 100px; /* Ajuste conforme necessário */
-    }
-
-    section {
-        font-size: 16px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-}
-
-@media only screen and (max-width: 1023px) {
-  .slider-wrapper .slide-button {
-      display: flex !important;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  nav {
-    padding: 1rem;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .logo {
-    width: 80px;
-    height: 80px;
-    order: -1; /* Move o logo para cima */
-    margin-bottom: 10px; /* Adiciona um espaço entre o logo e a lista de itens do menu */
-  }
-
-  ul.menu {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  a {
-    padding: 5px;
-  }
-
-  main {
-    padding: 1rem;
-  }
-
-  section {
-    font-size: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  img.main {
-    margin-top: 20px;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  h1.principal {
-    margin: 10px;
-    font-size: 1.5rem;
-  }
-
-  p {
-    margin: 10px;
-  }
-
-  section {
-    font-size: 14px;
-  }
-
-  img.main {
-    margin-left: 0;
-  }
-}
