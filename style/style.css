@@ -164,10 +164,10 @@ section.destaque {
 }
 
 img.main {
-    max-width: 300px, ;
-    max-width: 300px;
-    min-width: 300px;
-    min-height: 300px;
+    max-width: 280px, ;
+    max-width: 280px;
+    min-width: 280px;
+    min-height: 280px;
     margin-left: 50px;
     border: 1px solid black;
     border-radius: 50px;
