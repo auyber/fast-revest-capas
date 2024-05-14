@@ -37,6 +37,36 @@ body {
     font-family: var(--fonte1); 
 }
 
+main {
+    margin-top: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav {
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav span {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Ajusta o estilo do título para evitar que ele ocupe todo o espaço */
+  h1.span {
+    font-family: "Luna", sans-serif;
+    font-size: 1em;
+    color: var(--cor4);
+    margin-left: 10px; /* Adiciona margem à direita para separar o título do logo */
+  }
+
 .container {
     max-width: 1200px;
     width: 95%;
@@ -181,8 +211,10 @@ body {
 
     nav {
         flex-direction: column; 
-        align-items: center; 
+        align-items: center;
+     
     }
+
 
     nav > a {
         margin-top: 10px; 

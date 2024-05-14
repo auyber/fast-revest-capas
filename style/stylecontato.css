@@ -135,6 +135,18 @@ a:hover{
     background-color: var(--cor2);
 }
 
+nav span {
+  display: flex;
+  align-items: center;
+}
+
+/* Ajusta o estilo do título para evitar que ele ocupe todo o espaço */
+h1.span {
+  font-family: "Luna", sans-serif;
+  font-size: 1em;
+  color: var(--cor4);
+  margin-left: 10px; /* Adiciona margem à direita para separar o título do logo */
+}
 
 nav {
     margin: auto;
@@ -143,6 +155,8 @@ nav {
     flex-direction: row;
     justify-content:space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: auto;
 }
 
 nav > a:hover {
@@ -176,6 +190,8 @@ p {
 
 main {
     margin-top: 50px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .menu {
