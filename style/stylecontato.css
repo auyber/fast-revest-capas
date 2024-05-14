@@ -21,14 +21,12 @@
     --cor2: #7A4A12;
     --cor: #5e5959;
     --cor4: #B57625;
-    
 }
 
-
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Correção do typo "box-sizing" */
 }
 
 a {
@@ -38,83 +36,80 @@ a {
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
 }
 
 .wrapper .button {
-	display: block;
-	width: 60px;
-	height: 60px;
-	float: left;
-	margin: 0 5px;
-	background: #fff;
-	border-radius: 50px;
-	box-shadow:05px 10px 10px rgba(0, 0, 0, 0.1);
-	overflow: hidden;
-	cursor: pointer;
-	transition: all 0.3s ease-out;
+    display: block;
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin: 0 5px;
+    background: #fff;
+    border-radius: 50px;
+    box-shadow: 05px 10px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
 }
-.wrapper .button:hover .icon{
-	color: #fff;
+
+.wrapper .button:hover .icon {
+    color: #fff;
 }
 
 .wrapper a:nth-child(1):hover .icon {
-	background: #05a354;
+    background: #05a354;
 }
 
 .wrapper > a:nth-child(2):hover .icon {
-	background-image: linear-gradient(45deg, #5652C4, #ff0000);
+    background-image: linear-gradient(45deg, #5652C4, #ff0000);
 }
 
 .wrapper > a:nth-child(3):hover .icon {
-	background: #4267b2;
+    background: #4267b2;
 }
 
 .wrapper .button .icon {
-	display: inline-block;
-	width: 60px;
-	height: 60px;
-	border-radius: 50px;
-	line-height: 60px;
-	text-align: center;
-	transition: all 0.3s ease-out;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    line-height: 60px;
+    text-align: center;
+    transition: all 0.3s ease-out;
 }
+
 .wrapper .button .icon i {
-	font-size: 25px;
-	line-height: 60px;
-	transition: all 0.3s ease-out;
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
 }
+
 .wrapper .button span {
-	font-size: 20px;
-	font-weight: 500;
-	line-height: 60px;
-	margin-left: 10px;	
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;    
 }
+
 .wrapper .button:hover {
-	width: 200px;
+    width: 200px;
 }
 
 .wrapper a:nth-child(1):hover span {
-	color: #05a354;
+    color: #05a354;
 }
 
 .wrapper a:nth-child(2):hover span {
-	color: #ff0000;
+    color: #ff0000;
 }
 
 .wrapper a:nth-child(3):hover span {
-	color: #4267b2;
+    color: #4267b2;
 }
 
 header {
-    /*background-color: tomato;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    background-color: transparent;*/
     background-color: black;
     text-align: center;
-    container: 13px;  
-    
 }
 
 .logo {
@@ -128,7 +123,7 @@ a {
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
-    transition-duration:.5s;
+    transition-duration: .5s;
 }
 
 a:hover{
@@ -136,16 +131,15 @@ a:hover{
 }
 
 nav span {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
-/* Ajusta o estilo do título para evitar que ele ocupe todo o espaço */
 h1.span {
-  font-family: "Luna", sans-serif;
-  font-size: 1em;
-  color: var(--cor4);
-  margin-left: 10px; /* Adiciona margem à direita para separar o título do logo */
+    font-family: "Luna", sans-serif;
+    font-size: 1em;
+    color: var(--cor4);
+    margin-left: 10px;
 }
 
 nav {
@@ -164,7 +158,6 @@ nav > a:hover {
     color: white;
 }
 
-
 h1.span {
     font-family: "Luna", sans-serif;
     font-size: 1em;
@@ -177,7 +170,6 @@ h1 {
     color: var(--cor4);
     font-size: 2rem;
     line-height: 2em;
-    
 }
 
 p {
@@ -185,7 +177,6 @@ p {
     font-size: 1rem;
     margin: 20px;
     text-shadow: rgba(0, 0, 0, 0.247) 1px 1px 1px;
-    
 }
 
 main {
@@ -198,7 +189,6 @@ main {
     display: flex;
     flex-direction: row;
     gap: 1.5rem;
-    
 }
 
 .menu > li > a {
@@ -207,44 +197,39 @@ main {
 
 .wrapper > a {
     background-color: white;
-    
 }
 
 .wrapper {
     width: 100%;
-    height: 10vh; /* Alterei para 100vh para ocupar a altura total da tela */
-    display: flex; /* Alterei para flex para usar flexbox */
-    justify-content: center; /* Centraliza os elementos horizontalmente */
-    align-items: center; /* Centraliza os elementos verticalmente */
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 section {
-    /* background-color: white;*/
-     padding-top: 05vh;
-     padding-bottom: 05vh;
-     line-height: 1em;
-     padding-left: 30px;
-     padding-right: 30px;
-     font-size: 3.5vh;
-     border-bottom-left-radius: 30px;
-     border-top-right-radius: 30px;
-     margin: 10px;
-     border: solid 1px var(--cor4);
- }
-
-
-
+    padding-top: 05vh;
+    padding-bottom: 05vh;
+    line-height: 1em;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 3.5vh;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin: 10px;
+    border: solid 1px var(--cor4);
+}
 
 /* Regras de mídia para telas menores */
 
 @media screen and (max-width: 768px) {
     .menu {
-        flex-direction: column; /* Altera para empilhar os itens verticalmente */
-        align-items: center; /* Centraliza os itens horizontalmente */
+        flex-direction: column;
+        align-items: center;
     }
 
     .menu > li > a {
-        padding: 1rem; /* Aumenta o padding para melhorar a usabilidade em telas menores */
+        padding: 1rem;
     }
 }
 
@@ -258,8 +243,8 @@ section {
     .logo {
       width: 80px;
       height: 80px;
-      order: -1; /* Move o logo para cima */
-      margin-bottom: 10px; /* Adiciona um espaço entre o logo e a lista de itens do menu */
+      order: -1;
+      margin-bottom: 10px;
     }
   
     ul.menu {
@@ -286,27 +271,27 @@ section {
     img.main {
       margin-top: 20px;
     }
-  }
-  
-  @media only screen and (max-width: 480px) {
+}
+
+@media only screen and (max-width: 480px) {
     h1 {
-      font-size: 1.5rem;
+        font-size: 1.5rem;
     }
-  
+
     h1.principal {
-      margin: 10px;
-      font-size: 1.5rem;
+        margin: 10px;
+        font-size: 1.5rem;
     }
-  
+
     p {
-      margin: 10px;
+        margin: 10px;
     }
-  
+
     section {
-      font-size: 14px;
+        font-size: 14px;
     }
-  
+
     img.main {
-      margin-left: 0;
+        margin-left: 0;
     }
-  }
+}

@@ -21,30 +21,21 @@
     --cor2: #7A4A12;
     --cor: #5e5959;
     --cor4: #B57625;
-    
 }
 
 * {
     margin: 0;
     padding: 0;
     font-size: 1em;
-   }
+}
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
 }
 
 header {
-    /*background-color: tomato;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    background-color: transparent;*/
     background-color: black;
     text-align: center;
-    container: 13px;
-      
-    
 }
 
 .logo {
@@ -59,10 +50,10 @@ a {
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
-    transition-duration:.5s;
+    transition-duration: .5s;
 }
 
-a:hover{
+a:hover {
     background-color: var(--cor2);
 }
 
@@ -75,30 +66,28 @@ nav {
     padding: 1rem;
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     margin: auto;
 }
 
 nav span {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
-/* Ajusta o estilo do título para evitar que ele ocupe todo o espaço */
 h1.span {
-  font-family: "Luna", sans-serif;
-  font-size: 1em;
-  color: var(--cor4);
-  margin-left: 10px; /* Adiciona margem à direita para separar o título do logo */
+    font-family: "Luna", sans-serif;
+    font-size: 1em;
+    color: var(--cor4);
+    margin-left: 10px;
 }
 
 nav > a:hover {
     background-color: gray;
     color: white;
 }
-
 
 h1.span {
     font-family: "Luna", sans-serif;
@@ -112,7 +101,6 @@ h1 {
     color: var(--cor4);
     font-size: 2rem;
     line-height: 2em;
-    
 }
 
 h1.principal {
@@ -135,7 +123,6 @@ p {
     font-size: 1rem;
     margin: 20px;
     text-shadow: rgba(0, 0, 0, 0.247) 1px 1px 1px;
-    
 }
 
 main {
@@ -155,7 +142,6 @@ p.escolha {
 }
 
 section {
-   /* background-color: white;*/
     padding-top: 05vh;
     padding-bottom: 05vh;
     line-height: 1em;
@@ -182,7 +168,6 @@ section.destaque {
 }
 
 img.main {
-    max-width: 280px, ;
     max-width: 280px;
     min-width: 280px;
     min-height: 280px;
@@ -198,73 +183,74 @@ img.main {
 .voltar {
     color: white;
     margin: 30px;
-    
 }
 
 @media only screen and (max-width: 768px) {
-    nav {
-      padding: 1rem;
-      flex-direction: column;
-      align-items: center;
-    }
-  
     .logo {
-      width: 80px;
-      height: 80px;
-      order: -1; /* Move o logo para cima */
-      margin-bottom: 10px; /* Adiciona um espaço entre o logo e a lista de itens do menu */
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
     }
-  
-    ul.menu {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    a {
-      padding: 5px;
-    }
-  
-    main {
-      padding: 1rem;
-    }
-  
-    section {
-      font-size: 16px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-  
-    img.main {
-      margin-top: 20px;
-    }
-  }
-  
-  @media only screen and (max-width: 480px) {
-    h1 {
-      font-size: 1.5rem;
-    }
-  
-    h1.principal {
-      margin: 10px;
-      font-size: 1.5rem;
-    }
-  
-    p {
-      margin: 10px;
-    }
-  
-    section {
-      font-size: 14px;
-    }
-  
-    img.main {
-      margin-left: 0;
-    }
-  }
 
-  #link-css {
+    nav {
+        padding: 0.5rem;
+    }
+
+    ul.menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    a {
+        padding: 8px;
+    }
+
+    main {
+        max-width: 100%;
+        padding: 0.5rem;
+    }
+
+    section {
+        font-size: 14px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    img.main {
+        max-width: 200px;
+        max-height: 200px;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    h1.principal {
+        margin: 5px;
+        font-size: 1.2rem;
+    }
+
+    p {
+        margin: 5px;
+        font-size: 0.8rem;
+    }
+
+    section {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    img.main {
+        max-width: 150px;
+        max-height: 150px;
+    }
+}
+
+#link-css {
     text-align: none;
     color: white;
     background-color: var(--cor2);
@@ -274,6 +260,4 @@ img.main {
     bottom: 10px;
     border: solid 1px var(--cor);
     border-radius: 10px;
-  }
-
-  
+}
