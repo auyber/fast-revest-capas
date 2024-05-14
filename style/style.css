@@ -31,8 +31,7 @@
    }
 
 body {
-    background-color: black;
-    font-family: "IBM Plex Mono", monospace;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
 
@@ -43,15 +42,14 @@ header {
     background-color: transparent;*/
     background-color: black;
     text-align: center;
-    padding-top: 13px;
-    padding-bottom: 13px;
+    container: 13px;
+      
     
 }
 
-
 .logo {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     margin: 0;
 }
 
@@ -73,14 +71,27 @@ ul {
 }
 
 nav {
-    max-width: 1120px;
     margin: auto;
-    padding: 1.5rem 10rem;
-    
+    padding: 1rem;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav span {
+  display: flex;
+  align-items: center;
+}
+
+/* Ajusta o estilo do título para evitar que ele ocupe todo o espaço */
+h1.span {
+  font-family: "Luna", sans-serif;
+  font-size: 1em;
+  color: var(--cor4);
+  margin-left: 10px; /* Adiciona margem à direita para separar o título do logo */
 }
 
 nav > a:hover {
@@ -98,7 +109,7 @@ h1.span {
 
 h1 {
     text-align: center;
-    color: var(--cor2);
+    color: var(--cor4);
     font-size: 2rem;
     line-height: 2em;
     
@@ -127,6 +138,12 @@ p {
     
 }
 
+main {
+    margin-top: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
 p.escolha {
     text-align: center;
 }
@@ -137,33 +154,18 @@ p.escolha {
     gap: 1.5rem;
 }
 
-
-main {
-    background-color:black;
-    min-width: 300px;
-    max-width: 1200px;
-    margin: auto;
-    padding: 0px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.349);
-    margin-bottom: 30px;
-    
-    
-}
-
 section {
-    background-color: white;
+   /* background-color: white;*/
     padding-top: 05vh;
     padding-bottom: 05vh;
-    line-height: 2em;
+    line-height: 1em;
     padding-left: 30px;
     padding-right: 30px;
-    font-family: var(--fonte4);
     font-size: 3.5vh;
-    font-weight: 600;
     border-bottom-left-radius: 30px;
     border-top-right-radius: 30px;
     margin: 10px;
-    border: solid 2px var(--cor4);
+    border: solid 1px var(--cor4);
 }
 
 section.duvidas {
@@ -180,10 +182,10 @@ section.destaque {
 }
 
 img.main {
-    max-width: 200px, ;
-    max-width: 200px;
-    min-width: 200px;
-    min-height: 200px;
+    max-width: 280px, ;
+    max-width: 280px;
+    min-width: 280px;
+    min-height: 280px;
     margin-left: 50px;
     border: 1px solid black;
     border-radius: 50px;
@@ -197,21 +199,6 @@ img.main {
     color: white;
     margin: 30px;
     
-}
-
-p.quemsomos {
-    font-family: var(--fonte4);
-    color: black;
-    text-decoration: none;
-    font-size: 1em;
-    text-align: justify;
-    margin: 30px;
-}
-
-section.paginas {
-    margin: 30px;
-    min-width: 300px;
-    max-width: 1200px;
 }
 
 @media only screen and (max-width: 768px) {
