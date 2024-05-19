@@ -208,6 +208,23 @@ h1.span {
         margin-top: 20px;
     }
 
+    main {
+        margin-top: 50px;
+        max-width: 1200px;
+        margin: auto;
+    }
+    
+    nav {
+        margin: auto;
+        padding: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: auto;
+    }
+
     nav {
         flex-direction: column;
         align-items: center;
