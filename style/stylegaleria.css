@@ -235,8 +235,8 @@ h1.span {
     }
 }
 
-/* Styles for smaller devices such as smartphones */
-@media only screen and (max-width: 767px) {
+/* Regras para telas menores */
+@media only screen and (max-width: 768px) {
     .container {
         padding: 10px;
     }
@@ -356,6 +356,7 @@ img.main {
 
     main {
         padding: 1rem;
+    
     }
 
     section {
@@ -370,6 +371,8 @@ img.main {
         margin-top: 20px;
     }
 }
+
+/* regras para telas menores */
 
 @media only screen and (max-width: 480px) {
     h1 {

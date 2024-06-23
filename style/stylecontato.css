@@ -222,7 +222,7 @@ section {
 
 /* Regras de mídia para telas menores */
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .menu {
         flex-direction: column;
         align-items: center;
@@ -231,9 +231,7 @@ section {
     .menu > li > a {
         padding: 1rem;
     }
-}
-
-@media only screen and (max-width: 768px) {
+    
     nav {
       padding: 1rem;
       flex-direction: column;
