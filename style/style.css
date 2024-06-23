@@ -232,7 +232,8 @@ img.main {
     }
   
     img.main {
-      margin-top: 20px;
+        margin-left: 0;
+        margin-top: 20px; /* Adicionado para centralizar verticalmente */
     }
 }
 

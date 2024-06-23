@@ -19,7 +19,7 @@
     --fonte4: 'IBM Plex Mono', Geneva, sans-serif;
     --cor1: #363030;
     --cor2: #7A4A12;
-    --cor: #5e5959;
+    --cor3: #5e5959;
     --cor4: #B57625;
 }
 
@@ -35,12 +35,15 @@ body {
     min-height: 100vh;
     background: white;
     font-family: var(--fonte1);
+    overflow-x: hidden; /* Adicionado para evitar barra lateral */
 }
 
 main {
     margin-top: 50px;
     max-width: 1200px;
+    width: 100%; /* Ajustado para 100% da largura */
     margin: auto;
+    padding: 0 10px;
 }
 
 nav {
@@ -51,7 +54,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
-    margin: auto;
+    width: 100%; /* Ajustado para 100% da largura */
 }
 
 nav span {
@@ -68,8 +71,9 @@ h1.span {
 
 .container {
     max-width: 1200px;
-    width: 95%;
+    width: 100%; /* Ajustado para 100% da largura */
     margin: auto;
+    padding: 0 10px;
 }
 
 .slider-wrapper {
@@ -178,24 +182,7 @@ h1.span {
 
 /* Styles for tablets and smaller desktops */
 @media only screen and (max-width: 1023px) {
-    .slider-wrapper .slide-button {
-        display: none !important;
-    }
-
-    .slider-wrapper .image-list {
-        gap: 10px;
-        margin-bottom: 15px;
-        scroll-snap-type: x mandatory;
-    }
-
-    .slider-wrapper .image-list .image-item {
-        width: 280px;
-        height: 380px;
-    }
-
-    .slider-scrollbar .scrollbar-thumb {
-        width: 20%;
-    }
+    
 
     header {
         text-align: center;
@@ -210,8 +197,8 @@ h1.span {
 
     main {
         margin-top: 50px;
-        max-width: 1200px;
-        margin: auto;
+        width: 100%; /* Ajustado para 100% da largura */
+        padding: 0 10px;
     }
     
     nav {
@@ -222,7 +209,7 @@ h1.span {
         justify-content: space-between;
         align-items: center;
         max-width: 1200px;
-        margin: auto;
+        width: 100%; /* Ajustado para 100% da largura */
     }
 
     nav {
@@ -286,6 +273,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 100%; /* Ajustado para 100% da largura */
 }
 
 nav > a:hover {
@@ -309,6 +297,7 @@ h1 {
 
 main {
     margin-top: 50px;
+    width: 100%; /* Ajustado para 100% da largura */
 }
 
 .menu {
@@ -322,7 +311,6 @@ section {
 }
 
 img.main {
-    max-width: 200px;
     max-width: 200px;
     min-width: 200px;
     min-height: 200px;
@@ -356,7 +344,6 @@ img.main {
 
     main {
         padding: 1rem;
-    
     }
 
     section {
@@ -405,6 +392,6 @@ img.main {
     position: fixed;
     right: 10px;
     bottom: 10px;
-    border: solid 1px var(--cor);
+    border: solid 1px var(--cor3);
     border-radius: 10px;
 }
